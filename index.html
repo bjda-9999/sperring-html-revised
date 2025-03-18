@@ -690,6 +690,16 @@
         document.body.classList.toggle("dark-mode");
     };
 });
+
+        function updateTime() {
+            document.getElementById('time').innerText = new Date().toLocaleTimeString();
+        }
+        setInterval(updateTime, 1000);
+        
+        function changeBackground() {
+            document.body.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        }
+    
     </script>
 </body>
 
