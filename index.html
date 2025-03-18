@@ -56,10 +56,7 @@
               </li>
               <li class="nav-item">
               <a class="nav-link" id="toggle-mode">Dark Mode</a>
-              </li>
-               <li>
-                 <div id="time"></div>
-               </li>
+              </li>            
             </ul>
             <div class="user_option">
               <a href="">
@@ -255,6 +252,7 @@
 
   <section class="category_section layout_padding">
     <div class="container">
+       <h1>Current Time:<div id="time"></div></h1><br>
       <div class="heading_container">
         <h2>
           Category
@@ -323,6 +321,8 @@
         </div>
       </div>
     </div>
+
+
   </section>
 
 
@@ -693,16 +693,12 @@
         document.body.classList.toggle("dark-mode");
     };
 });
-
         function updateTime() {
             document.getElementById('time').innerText = new Date().toLocaleTimeString();
         }
         setInterval(updateTime, 1000);
-        
-        function changeBackground() {
-            document.body.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-        }
     
+   
     </script>
 </body>
 
