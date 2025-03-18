@@ -179,6 +179,11 @@ a:focus {
     background-color: #1a2e35;
     color: white;
 }
+#time{
+    color: black;
+    font-size: 50px;
+    margin-top: 20px;
+}
 .custom_nav-container {
   z-index: 99999;
   padding: 0;
